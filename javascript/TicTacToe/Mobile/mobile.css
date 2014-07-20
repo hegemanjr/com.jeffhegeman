@@ -1,0 +1,108 @@
+body {
+	background-color: gray;
+
+}
+
+
+.divTtt{
+	width: 70px;
+	color:#f00;
+	font-family: Bradley Hand ITC;
+	font-size: 45pt;
+	text-align: center;
+	background-color:inherit ;
+	}
+
+#winner{
+	font-size:35pt;
+	display: none;
+}
+
+.bigTitle{
+	font-size: 45px;
+	font-weight: 800;
+}
+
+td{
+	height: 80px;
+	width: 80px;
+}
+
+/*Tic Tac Toe Table*/
+table{
+	display: none;
+	border-collapse: collapse;
+}
+
+footer{
+	
+}
+#btnNewGame{
+	display: none;
+}
+
+#TD1{
+	font-family: Bradley Hand ITC;
+	font-size: 45pt;
+	border-bottom: 1pt solid #000;
+	border-right: 1pt solid #000;
+	margin: 0px;
+}
+#TD2{
+	font-family: Bradley Hand ITC;
+	font-size: 45pt;
+	border-right: 1pt solid #000;
+	border-bottom: 1pt solid #000;
+	border-left: 1pt solid #000000;
+	margin: 0px;
+}
+
+#TD3{
+	font-family: Bradley Hand ITC;
+	font-size: 45pt;
+	border-bottom: 1pt solid #000;
+	border-left: 1pt solid #000000;
+	margin: 0px;
+}
+
+#TD4{
+	font-family: Bradley Hand ITC;
+	font-size: 45pt;
+	border-top: 1pt solid #000;
+	border-bottom: 1pt solid #000;
+	border-right: 1pt solid #000;
+}
+
+#TD5{
+	font-family: Bradley Hand ITC;
+	font-size: 45pt;
+	border: 1pt solid #000;
+}
+
+#TD6{
+	font-family: Bradley Hand ITC;
+	font-size: 45pt;
+	border-top: 1pt solid #000;
+	border-bottom: 1pt solid #000;
+	border-left: 1pt solid #000;
+}
+#TD7{
+	font-family: Bradley Hand ITC;
+	font-size: 45pt;
+	border-top: 1pt solid #000;
+	border-right: 1pt solid #000;
+}
+#TD8{
+	font-family: Bradley Hand ITC;
+	font-size: 45pt;
+	border-top: 1pt solid #000;
+	border-left: 1pt solid #000;
+	border-right: 1pt solid #000;
+}
+#TD9{
+	font-family: Bradley Hand ITC;
+	font-size: 45pt;
+	border-top: 1pt solid #000;
+	border-left: 1pt solid #000;
+
+}

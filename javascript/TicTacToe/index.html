@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	
+		<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" >
+			if (screen.width <= 699) {
+		document.location = "/JavaScript/tictactoe/Mobile/index.html";
+		}
+		</script>
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Tic Tac Toe</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Jeff" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/Project02/Images/tictactoe.jpg" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="stylesheet" href="Project02.css" />
+	</head>
+
+	<body >
+	
+
+			<header>
+			<div id="header"></div>	
+			</header>
+			
+		
+<div id="controls" style=" width: 550px; height:140px; " class="content shadow animationLoad">
+		<span  id="currentPlayer" style="display: none">X</span>
+		
+		<input type="button" class="button" id="btn1Player" value="1 Player"/>
+		<input type="button"  class="button" id="btn2Player" value="2 Player"/>
+		
+		<div id="spnCurrentPlayer">
+		<label id="lblCurrentPlayer"  class="bigTitle"></label>
+		<label id="sTurn" class="bigTitle">'s Turn!</label>
+		
+		<label id="winner">Winner!</label></div>
+			</div>
+<div id="gameTable" class="content animationLoad">
+<table>
+	<tr>
+		<td id="TD1">
+			<div id="1" class="divTtt">&nbsp;</div>
+		</td>
+		<td id="TD2">
+			<div id="2" class="divTtt">&nbsp; </div>
+		</td>
+		<td id="TD3">
+			<div id="3"  class="divTtt">&nbsp;</div>
+		</td> 
+	</tr>
+	<tr>
+		<td id="TD4">
+			<div id="4" class="divTtt">&nbsp;</div>
+		</td>
+		<td id="TD5">
+			<div id="5" class="divTtt">&nbsp;</div>
+		</td>
+		<td id="TD6">
+			<div id="6" class="divTtt">&nbsp;</div>
+		</td>
+	</tr>
+	<tr>
+		<td id="TD7">
+			<div id="7" class="divTtt">&nbsp;</div>
+		</td>
+		<td id="TD8">
+			<div id="8" class="divTtt">&nbsp;</div>
+		</td>
+		<td id="TD9">
+			<div id="9" class="divTtt">&nbsp;</div>
+		</td>
+	</tr>
+</table>
+	
+		</div>
+		<div class="darkbox hidden"></div>
+	<div id="alertUser" class="lightbox hidden"></div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="Scripts/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="Project02.js"></script>
+		
+	</body>
+	
+	<footer>
+				<p>
+					&copy; Copyright  by Jeff Hegeman
+	<button href="" id="btnQuit" class="button" type="button">Quit Game</button>
+				</p>
+			</footer>
+		
+</html>

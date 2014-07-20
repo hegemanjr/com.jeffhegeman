@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<title>Tic Tac Toe</title> 
+	<link rel="stylesheet"  href="mobile.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Tic Tac Toe</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		
+<div>
+			
+				<a href="" data-role="button"  id="btn1Player">1 Player</a>
+					<a href=""data-role="button"  id="btn2Player">2 Player</a>
+			<span  id="currentPlayer" style="display: none">X</span>
+			<span id="spnCurrentPlayer" class="bigTitle" style="display: none">
+				<label id="lblCurrentPlayer" ></label>
+			<label id="sTurn" class="bigTitle" style="display: none">'s Turn!</label>
+			</span>
+			<br />
+			<br /><br />
+			<br />
+			<label id="winner">Winner!</label>
+<table id="gameTable">
+	<tr>
+		<td id="TD1">
+			<div id="1" class="divTtt">&nbsp;</div>
+		</td>
+		<td id="TD2">
+			<div id="2" class="divTtt">&nbsp; </div>
+		</td>
+		<td id="TD3">
+			<div id="3"  class="divTtt">&nbsp;</div>
+		</td> 
+	</tr>
+	<tr>
+		<td id="TD4">
+			<div id="4" class="divTtt">&nbsp;</div>
+		</td>
+		<td id="TD5">
+			<div id="5" class="divTtt">&nbsp;</div>
+		</td>
+		<td id="TD6">
+			<div id="6" class="divTtt">&nbsp;</div>
+		</td>
+	</tr>
+	<tr>
+		<td id="TD7">
+			<div id="7" class="divTtt">&nbsp;</div>
+		</td>
+		<td id="TD8">
+			<div id="8" class="divTtt">&nbsp;</div>
+		</td>
+		<td id="TD9">
+			<div id="9" class="divTtt">&nbsp;</div>
+		</td>
+	</tr>
+</table>
+			
+			<div data-role="footer" class="ui-bar" data-position="fixed">
+				<label for="btnQuit">&copy;by Jeff Hegeman</label>
+	<a href="" id="btnQuit" data-role="button" data-icon="delete">Quit Game</a>
+
+</div>
+			
+	
+		</div>
+		
+
+		
+	</div><!-- /content -->
+
+</div><!-- /page -->
+<script type="text/javascript" src="../Project02.js"></script>
+</body>
+</html>

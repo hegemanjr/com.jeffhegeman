@@ -1,0 +1,24 @@
+<html>
+	<head></head>
+	<body>
+		<div id="weather"> </div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> 
+		<script> jQuery(document).ready(function($) { $.ajax({ url : "http://api.wunderground.com/api/253ccc4e8c3847a3/geolookup/conditions/q/WI/Lake_Geneva.json",
+					dataType : "jsonp", success : function(parsed_json) 
+			
+					{ 
+					var city = parsed_json['location']['city'];
+					var state = parsed_json['location']['state'];
+					var location = city +", "+state;
+					var temp_f = parsed_json['current_observation']['temp_f'];
+					var feelsLike = parsed_json['current_observation']['feelslike_f']; 
+					var pictureURL = parsed_json['current_observation']['icon_url'];
+					var precip = parsed_json['current_observation']['precip_today_in']; 
+					var weather = parsed_json['current_observation']['weather'];
+					//$('#weather').html("Current temperature in " + location + " is: " + temp_f+" Feels like: "+feelsLike+"<br />"+ precip+"<img src='"+pictureURL+"'>"); 
+					$('#weather').html("<table><tr><td colspan='2'>"+location+"</td></tr><tr><td>Temp: </td><td>"+temp_f+"</td></tr><tr><td>Feels like: </td><td>"+feelsLike+"</td></tr><tr><td>Current conditions: </td><td>"+weather+"</td><td><img src='"+pictureURL+"'></td></tr><tr><td>Precipitation today: </td><td>"+precip+"</td></tr></table>");
+			} }); }); 
+		</script>
+
+	</body>
+</html>

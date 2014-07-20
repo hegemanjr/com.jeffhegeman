@@ -1,0 +1,163 @@
+
+@keyframes nooseLoad
+{
+from {position:absolute;
+		top:-800px;
+		}
+to {position:absolute;
+		top:0px;}
+}
+
+@-moz-keyframes nooseLoad /* Firefox */
+{
+from {position:absolute;
+		top:-800px;
+		}
+to {position:absolute;
+		top:0px;}
+}
+
+@-webkit-keyframes nooseLoad /* Safari and Chrome */
+{
+from {position:absolute;
+		top:-800px;
+		}
+to {position:absolute;
+		top:0px;}
+}
+
+@-o-keyframes nooseLoad /* Opera */
+{
+from {position:absolute;
+		top:-800px;
+		}
+to {position:absolute;
+		top:0px;}
+}
+@font-face {
+	font-family: southPark;
+	src: url('Fonts/south park.ttf');
+}
+header{
+	color:#fff;
+	text-align:center;
+	height:50px;
+}
+body {
+	font-family: southPark;
+	background-color: #333333;
+	height: 100%;
+	width:100%;
+}
+
+#noose{
+	position: absolute;
+	 top:0px; 
+	 left: 0px; 
+	 
+	    animation:nooseLoad 10s;
+	-moz-animation:nooseLoad 10s; /* Firefox */
+	-webkit-animation:nooseLoad 10s; /* Safari and Chrome */
+	-o-animation:contentnooseLoadLoad 10s; /* Opera */
+}
+#rope{
+
+	z-index: -1;
+}
+#gamePlay{
+	color:#fff;
+	height: 100%;
+	width:66%;
+	top:50px;
+	margin-left: 400px;
+}
+#attemptedLetters{
+	font-family: southpark;
+	font-size:xx-large;
+	color:#f00;
+}
+#gameBoard{
+	padding-top: 60px;
+}
+.flash{
+	text-decoration:blink;
+}
+.kenny{
+	position: absolute; 
+	top:200px; 
+	left: 50px;
+	z-index: 1;
+	width:70%;
+	
+}
+.hidden{
+
+	opacity:0;
+	
+}
+.shown{
+	transition: opacity 2s;
+	opacity:1;
+}
+
+.test{
+	position:absolute;
+	left:910px;
+}
+.button.green{
+	color:#009900;
+}
+
+.wordLetter{
+	font-family: southPark;
+	background-color:#333;
+	text-align:center;
+	font-size:xx-large;
+	width:50px;
+	color:#009900;
+	border-bottom: solid #ffffff;
+}
+.letterButton{
+	width:50px;
+}
+.button {
+	
+   border-top: 1px solid #f7f7f7;
+   background: #d6ac65;
+   background: -webkit-gradient(linear, left top, left bottom, from(#d9780f), to(#d6ac65));
+   background: -webkit-linear-gradient(top, #d9780f, #d6ac65);
+   background: -moz-linear-gradient(top, #d9780f, #d6ac65);
+   background: -ms-linear-gradient(top, #d9780f, #d6ac65);
+   background: -o-linear-gradient(top, #d9780f, #d6ac65);
+   padding: 7.5px 15px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 24px;
+  font-family: southPark;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #d9780f;
+   background: #d9780f;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #d9780f;
+   background: #d9780f;
+   }
+.button:disabled{
+   border-top-color: #d9780f;
+   background: #333333;
+   color: #ff0000;
+}
+footer{
+	position: absolute;
+	bottom:0px;
+}

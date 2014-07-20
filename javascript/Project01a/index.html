@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Italian Casserole</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Jeff" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link type="text/css" href="css/custom-theme/jquery-ui-1.8.24.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.24.custom.min.js"></script>
+		
+	</head>
+
+	<body class="body">
+		<div>
+			<!-- form for page -->
+			
+			<form action="" method="post" id="frmRecipeSize">
+		<!-- Header with page title -->
+			<header id="header">
+			<table width="90%">
+				<tr>
+					<td>
+			
+				<h1 class="header">Italian Casserole</h1>
+			
+			</td>
+			<td width="10%">
+				<!-- Radio buttons to select recipe size -->
+			<div class="container">
+			<div class="redText">
+				<input type="radio" name="rdoSize" class="radio" value=".5" > Half <br />
+				<input type="radio" name="rdoSize" class="radio" value="1" checked> Full <br />
+				<input type="radio" name="rdoSize" class="radio" value="2" > Double <br />
+	</div>
+	<input type="button" id="btnHide" value="Hide header" />
+			</div></td>
+			</tr>
+			</table>
+			</header>
+			<div class="container">
+			<!-- Ingredients needed for recipe -->
+			<div class="whiteText">
+				<h3>Ingredients</h3>
+				<table width="95%">
+					<tr>
+						<td><span id="ing01">2</span></td>
+						<td>lbs.</td>
+						<td>mini lasagna or bow tie pasta</td>
+						<td align="right" valign="top" rowspan="9"><img height="150px" src="http://img4.myrecipes.com/i/Hunts/Italian_Cheese_Noodle_Casserole_300px.jpg" />
+			</td>
+					</tr>	
+					<tr>
+						<td><span id="ing02">0.5</span></td>
+						<td>cups.</td>
+						<td>Butter</td>
+					</tr>
+					<tr>
+						<td><span id="ing03">2</span></td>
+						<td>lbs.</td>
+						<td>Pizza meat or italian sausage</td>
+					</tr>
+					<tr>
+						<td><span id="ing04">2</span></td>
+						<td>cups</td>
+						<td>Cream</td>
+					</tr>
+					<tr>
+						<td><span id="ing05">104</span></td>
+						<td>oz.</td>
+						<td>Spaghetti Sauce</td>
+					</tr>
+					<tr>
+						<td><span id="ing06">2</span></td>
+						<td>tsp.</td>
+						<td>Garlic Powder</td>
+					</tr>
+					<tr>
+						<td><span id="ing07">1</span></td>
+						<td>Tbsp.</td>
+						<td>Italian Seasoning</td>
+					</tr>
+					<tr>
+						<td><span id="ing08">2</span></td>
+						<td>lbs.</td>
+						<td>Caesar Blend Cheese (Parmesan, Romano, Asiago)</td>
+					</tr>
+					<tr>
+						<td><span id="ing09">2</span></td>
+						<td>lbs.</td>
+						<td>Shredded Mozzarella Cheese</td>
+					</tr>
+					
+				</table>
+			</div>
+			</div>
+			<!-- Tabs for preparation steps -->
+			<div id="tabs">
+				<ul>
+					<li class="myTab"><a href="#tabs-1">First(pre-prep)</a></li>
+					<li class="myTab"><a href="#tabs-2">Second(prep a)</a></li>
+					<li class="myTab"><a href="#tabs-3">Third(prep b)</a></li>
+					<li class="myTab"><a href="#tabs-4">Fourth(Bake)</a></li>
+					<li class="myTab"><a href="#tabs-5">Fifth(Eat!)</a></li>
+				</ul>
+			<div id="tabs-1"  class="myTab">Preheat oven to 375 <br />Start to boil water for pasta</div>
+			<div id="tabs-2" class="myTab">
+				<p class="redText">Pasta:</p> When your water is boiling add noodles. Subract 2-3 min. from recommeded cook time so they are slightly under done. Drain and set aside. (optional, stir in a little olive oil to keep noodles from sticking)
+							<br />
+							<p class="redText">White Sauce:</p> Over medium-high heat, add butter to the sauce pan. Once the butter is melted add the cream, garlic, and italian seasonings constantly stir and bring to a light boil. When it starts to boil slowly stir in caesar blend cheese, when all of the cheese is added and melted, remove from heat. 
+							<br />
+							<p class="redText">Sausage:</p> Over medium-high heat, brown italian sausage and drain fat. It is ok if the meat is slightly underdone because it will be baked.
+			</div>
+			<div id="tabs-3" class="myTab">
+				<p class="redText">Pasta:</p> Stir white sauce into pasta.
+							<br />
+							<p class="redText">Layer:</p> In greased cake pan, add a thin layer red sauce, then continue to layer ingredients in this order.
+							<br />
+							
+							<ul>
+								<li>Noodles</li>
+								<li>Red sauce</li>
+								<li>Sausage</li>
+								<li>Mozzarella</li>								
+							</ul> 
+							<br />Continue to layer until pan is nearly full. If enough ingredients remain, repeat this process in an additional cake pan.				
+				
+
+		</div>
+		<div id="tabs-4" class="myTab">
+				Bake at 375 for 45 minutes or until bubbling and lightly brown.
+
+		</div>
+		<div id="tabs-5" class="myTab">
+				Enjoy!
+
+		</div>
+		</div>
+		<!-- Supplies Needed -->
+				<div class="redText">
+				<h3>Supplies</h3>
+				<div>You will need:
+				<ul>
+					<li>Cake pan(s).</li> 
+					<li>A large frying pan</li>
+					<li>A large Sauce pan</li>
+					<li>A large pot</li>
+					</ul></div>
+			</div>
+			<input type="button" id="btnShow" value="Show Header" />
+			</form>
+
+			
+			</div>
+		
+		
+			<footer class="redText">
+				<p>
+					&copy; Copyright  by Jeff Hegeman
+				</p>
+				
+			</footer>
+		
+		
+		<script type="text/javascript" src="project01b.js"></script>
+	</body>
+</html>
